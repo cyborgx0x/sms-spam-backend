@@ -1,5 +1,5 @@
 import os
-class DatasetProcessing():
+class Core():
     state = ""
 
     @property
