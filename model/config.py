@@ -26,5 +26,5 @@ class Config(object):
             evaluation_strategy="epoch",
             save_strategy="epoch",
             load_best_model_at_end=True,
-            push_to_hub=True,
+            push_to_hub=False,
         )
