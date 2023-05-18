@@ -14,7 +14,7 @@ class Core():
         
 
     def _run(self):
-        training_args = self.config.training_argumen
+        training_args = self.config.training_argument
         trainer = Trainer(
             model=self.config.model,
             args=training_args,
