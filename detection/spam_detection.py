@@ -25,6 +25,10 @@ class SpamDetection():
         '''
         hậu xử lý và trả về kết quả nhận diện
         '''
+        self.logging = dict(
+            text = text,
+            result = result
+        )
         return self.post_processing(result)
 
 
@@ -38,7 +42,6 @@ class SpamDetection():
         chuyển đổi sang các nhãn có ý nghĩa hơn.
         Lưu kết quả inference vào trong logging để thực hiện monitor hiệu suất 
         '''
-        self.logging = result
         return result[0]
     
     def data_processing(self, data):
